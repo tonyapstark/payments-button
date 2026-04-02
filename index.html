@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f7f6;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-wrapper {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        .pay-btn {
+            text-decoration: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            color: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+
+        .pay-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Paytm Brand Colors */
+        .paytm {
+            background-color: #00baf2;
+            border-bottom: 4px solid #002e6e;
+        }
+
+        /* PhonePe Brand Colors */
+        .phonepe {
+            background-color: #232bc1;
+            border-bottom: 4px solid #451a75;
+        }
+
+        .pay-btn:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Select Payment Method</h2>
+    <div class="btn-wrapper">
+        <a href="upi://pay?pa=yespay.cfpsprod21@yesbankltd&pn=Cashfree&tn=BAV&am=1.00&cu=INR&tr=12392305" class="pay-btn paytm">Pay with Paytm</a>
+        <a href="#" class="pay-btn phonepe">Pay with PhonePe</a>
+    </div>
+</div>
+
+</body>
+</html>
